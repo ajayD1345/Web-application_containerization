@@ -5,9 +5,6 @@ This project demonstrates how to containerize a simple Flask web application usi
 ## Project Structure
 
 Web-application_containerization/
-├── app.py
-├── requirements.txt
-└── Dockerfile
 
 - `app.py`: The main Flask application file.
 - `requirements.txt`: The list of dependencies for the Flask application.
