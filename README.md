@@ -20,22 +20,21 @@ Web-application_containerization/
 Follow these instructions to get the Flask application up and running in a Docker container.
 
 ### Step 1: Clone the Repository
-```
-git clone https://github.com/ajayD1345/Web-application_containerization.git
-cd Web-application_containerization/
-
+    ```
+    git clone https://github.com/ajayD1345/Web-application_containerization.git
+    cd Web-application_containerization/
+    ```
 ### Step 2: Build the docker image
-
-sudo docker build -t Web-application_containerization .
-
+    ```
+    sudo docker build -t Web-application_containerization .
+    ```
 ### Step 3: Run the docker container
-
-sudo docker run -d -p 5000:5000 Web-application_containerization
-
+    ```
+    sudo docker run -d -p 5000:5000 Web-application_containerization
+    ```
 ### Step 4: Access the Application
+   - Open your web browser and navigate to http://localhost:5000. You should see the message "Hello, Docker!".
 
-Open your web browser and navigate to http://localhost:5000. You should see the message "Hello, Docker!".
-```
 ## Environment Variables
 
  The application can be configured using the following environment variables:
@@ -45,9 +44,9 @@ Open your web browser and navigate to http://localhost:5000. You should see the 
 
 ## Example
  To run the application on a different port:
- 
+``` 
 sudo docker run -d -p 8080:8080 -e APP_PORT=8080 Web-application_containerization
-
+```
 ## Dockerfile Explained
 
 ```
